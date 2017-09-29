@@ -1,0 +1,24 @@
+body {
+	background-color: lightgreen;
+}
+
+.box {
+	margin: 50px 50px 50px 50px;
+}
+
+#aboutme {
+	background-color: orange;
+	padding-bottom: 35px;
+}
+
+#aboutme h1 {
+	padding-bottom: 35px;
+}
+
+#aboutme p {
+	font-size: 18px;
+}
+
+#projects {
+	background-color: cyan;
+}
