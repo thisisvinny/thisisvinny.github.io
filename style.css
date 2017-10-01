@@ -5,6 +5,7 @@
 h1 {
 	font-family: sans-serif;
 	font-size: 50px;
+	margin-bottom: 50px;
 }
 
 #myNavbar {
@@ -32,4 +33,13 @@ h1 {
 
 #contact {
 	background-color: lightgreen;
+}
+
+#contact a {
+	font-size: 22px;
+	color: black;
+}
+
+#contact i {
+	color: green;
 }
