@@ -1,9 +1,10 @@
-body {
-	background-color: lightgreen;
+.box {
+	margin: 50px auto 50px auto;
 }
 
-.box {
-	margin: 50px 50px 50px 50px;
+h1 {
+	font-family: sans-serif;
+	font-size: 50px;
 }
 
 #myNavbar {
@@ -15,14 +16,20 @@ body {
 	padding-bottom: 35px;
 }
 
-#aboutme h1 {
-	padding-bottom: 35px;
+#aboutme p {
+	font-size: 22px;
+	max-width: 80%;
 }
 
-#aboutme p {
-	font-size: 18px;
+#me {
+	height: 100%;
+	width: 100%;
 }
 
 #projects {
 	background-color: cyan;
+}
+
+#footer {
+	background-color: lightgreen;
 }
