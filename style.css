@@ -6,6 +6,10 @@ body {
 	margin: 50px 50px 50px 50px;
 }
 
+#myNavbar {
+	font-size: 18px;
+}
+
 #aboutme {
 	background-color: orange;
 	padding-bottom: 35px;
