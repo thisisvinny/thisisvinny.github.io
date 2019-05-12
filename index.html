@@ -2,78 +2,122 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel="stylesheet" text="text/css" href="style.css">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Vincent Yu</title>
+	<!-- Bulma -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+	<!-- Font Awesome Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" text="text/css" href="css/styles.css">
+	<!-- JS-->
+	<script src="js/script.js"></script>
 </head>
-<body>
+
+<body class="has-navbar-fixed-top">
+
 	<!-- Nav Bar -->
-	<nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="#">Vincent Yu</a>
-	  <div class="collapse navbar-collapse">
-	    <div class="navbar-nav">
-	      <a class="nav-item nav-link" href="#aboutme">About Me</a>
-	      <a class="nav-item nav-link" href="#projects">Projects</a>
-	      <a class="nav-item nav-link" href="#contact">Contact</a>
-	    </div>
-	  </div>
+	<nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+		<div class="navbar-menu">
+			<div class="navbar-start">
+				<p class="navbar-item"></p>
+				<p class="navbar-item"></p>
+				<p class="navbar-item"></p>
+				<p class="navbar-item"></p>
+				<p class="navbar-item"></p>
+				<a class="navbar-item has-text-black" href="#">
+					Vincent Yu
+				</a>
+				<a class="navbar-item has-text-black" href="#aboutme">
+					About Me
+				</a>
+				<a class="navbar-item has-text-black" href="#projects">
+					Projects
+				</a>
+				<a class="navbar-item has-text-black" href="#contact">
+					Contacts
+				</a>
+			</div>
+		</div>
 	</nav>
 
-	<!-- About Me -->
-	<div id="aboutme" class="box container-fluid">
-		<h1 class="text-center">About Me</h1>
-		<div class="row">
-			<div class="col-lg-7">
-				<p>Hi! My name is Vincent Yu. I am a computer science major studying in the Macaulay Honors College at the City College of New York.</p>
-				<p>I fell in love with computer science ever since I took an intro to computer science course in high school. There is no better feeling than seeing one of your ideas and creations come to life.</p>
-				<p>My dream job is to work at Riot Games.</p>
-			</div>
-			<div class="col-lg-4">
-				<img id="me" alt="ME" src="img/name.jpg"></img>
+	<!-- Name -->
+	<section class="hero is-primary is-small">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title is-1 has-text-black">
+					Vincent Yu
+				</h1>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<!-- About Me -->
+	<section id="aboutme" class="hero is-light">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title has-text-black">About Me</h1>
+				<section class="section">
+					<div class="container">
+						<p>Hi! My name is Vincent Yu. I am a computer science major studying in the Macaulay Honors College at the City College of New York.</p>
+						<p>I fell in love with computer science ever since I took an intro to computer science course in high school. There is no better feeling than seeing one of your ideas and creations come to life.</p>
+						<p>As a math enthusiast, I enjoy tackling and solving problems. </p>
+						<p>Outside of school, I am an Algebra tutor for 8th grade middle school students. I am also an avid gamer, leading our college's League of Legends collegiate team to Rank 17 in the Eastern Conference.</p>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
 
 	<!-- Projects -->
-	<div id="projects" class="box container-fluid">
-		<h1 class="text-center">Projects</h1>
-		<div class="row">
-			<div class="col-lg-6">
-				<p>P1</p>
+	<section id="projects" class="hero is-light">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title has-text-black">Projects</h1>
+				<div id="tabs" class="tabs is-toggle is-toggle-rounded">
+					<ul>
+						<li class="is-active" data-tab="1"><a>P1</a></li>
+						<li data-tab="2"><a>P2</a></li>
+						<li data-tab="3"><a>P3</a></li>
+						<li data-tab="4"><a>P4</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-lg-6">
-				<p>P2</p>
+			<div id="tab-content" class="container has-text-centered">
+				<p class="is-active" data-content="1">
+					THIS IS MY PROJECT.
+				</p>
+				<p data-content="2">
+					THIS IS MY.
+				</p>
+				<p data-content="3">
+					THIS IS.
+				</p>
+				<p data-content="4">
+					THIS.
+				</p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-lg-6">
-				<p>P3</p>
-			</div>
-			<div class="col-lg-6">
-				<p>P4</p>
-			</div>
-		</div>
-	</div>
+	</section>
 
 	<!-- Contact -->
-	<div id="contact" class="box container-fluid">
-		<h1 class="text-center">Contact</h1>
-		<div class="row">
-			<div class="col-lg-6 text-center">
-				<a href="https://github.com/thisisvinny"><i class="fa fa-github-square fa-lg"></i>Github</a>
-			</div>
-			<div class="col-lg-6 text-center">
-				<a href="mailto:vinjyu1@gmail.com"><i class="fa fa-envelope fa-lg"></i>Email</a>
+	<section id="contact" class="hero is-primary">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title has-text-black">Contact</h1>
+				<div class="columns">
+					<div class="column is-offset-1 is-4">
+						<a class="subtitle is-4 has-text-black" href="https://github.com/thisisvinny"><i class="fab fa-github"></i> Github</a>
+					</div>
+					<div class="column is-offset-1 is-5">
+						<a class="subtitle is-4 has-text-black" href="mailto:vinjyu1@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </body>
+
 </html>
